@@ -1,0 +1,58 @@
+let order = []
+let clickedOrder = []
+let score = 0
+
+//0 = verde
+//1 = vermelho
+//2 = amrelo
+//3 = azul
+
+const blue = documet.querySelector('.blue')
+const red = documet.querySelector('.red')
+const green = documet.querySelector('.green')
+const yellow = documet.querySelector('.yellow')
+
+let shuffleOrder = () => {
+  let colorOrder = Math.floor(Math.random() * 4)
+  order[order.length] = colorOrder
+  clickedOrder = []
+}
+for (let i in order) {
+  let elementColor = creatColorElement(order[i])
+  lightColor(elementColor, number[i] + 1)
+}
+
+let lightcolor = (elementColor, number) => {
+  number = number * 500
+  setTimeout(() => {
+    Element.classList.add('select')
+  }, number - 250)
+  setTimeout(() => {
+    element.classList.remove('select')
+  })
+}
+
+//Checar se os botões clicados são os mesmos da ordem gerada no jogo.
+let checkedOrder = () => {
+  for (let i in clickedOrder){
+    if(clickedOrder.[i] != order[i]){
+      lose()
+      break
+    }
+  } if(clickedOrder.length == order.length){
+    alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível:`)
+    nextlevel()
+  }
+}
+
+
+//função para o click do usuário
+let click = color => {
+  clieckedOrder[clieckedOrder.length] = color
+  creatColorElement(color).classList.add('select')
+
+  setTimeout(() => {
+    creatColorElement(color).classList.remove('select')
+  })
+  checkedOrder()
+}
