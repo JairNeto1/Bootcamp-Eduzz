@@ -56,3 +56,10 @@ let click = color => {
   })
   checkedOrder()
 }
+
+//Função que retorna a cor
+let creatColorElement = (color) => {
+  if (color == 0){
+    
+  }
+}
