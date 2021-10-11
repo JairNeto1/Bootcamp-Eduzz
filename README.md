@@ -6,7 +6,7 @@
 - [x] CSS
 - [ ] JavaScript
 - [ ] Node
-- [ ] React
+- [x] React
 - [ ] Typescript
 - [ ] MySQL
 - [ ] MongoDB
@@ -15,7 +15,7 @@
 - [ ] Docker
 - [ ] AWS
 - [x] Git/Github
-- [ ] Scrum
+- [x] Scrum
 
 ---
 
