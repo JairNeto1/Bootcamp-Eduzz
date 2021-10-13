@@ -5,7 +5,7 @@
 - [x] HTML
 - [x] CSS
 - [ ] JavaScript
-- [ ] Node
+- [x] Node
 - [x] React
 - [ ] Typescript
 - [ ] MySQL
